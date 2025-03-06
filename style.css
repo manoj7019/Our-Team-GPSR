@@ -10,11 +10,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-size: 56px;
+    color: darkgreen;
+}
+
+a {
+    text-decoration: none;
+}
+
 .our-team-container {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    padding: 96px;
+    /* gap: 96px; */
+    /* padding: 96px; */
 }
 
 .our-team-container-head {
@@ -22,6 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    padding: 0 96px;
 }
 
 .our-team-container-head > p {
@@ -30,12 +40,52 @@ body {
     line-height: 36px;
 }
 
+.our-team-container-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    background: rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(16px);
+    padding: 16px;
+    margin-block: 16px;
+}
+
+button.slide-nav-button {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: darkgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button.slide-nav-button:hover {
+    transform: scale(1.125);
+}
+
 .team-members-group {
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    padding: 0 96px;
 }
+
+/* .team-members-group .two {
+    padding: 0 128px;
+} */
 
 .team-members {
     /* padding: 64px; */
@@ -48,6 +98,7 @@ body {
 .team-member-card {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     gap: 16px;
     border-radius: 8px;
     box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
@@ -90,4 +141,18 @@ body {
 #icon {
     width: 24px;
     height: 24px;
+}
+
+#promoters {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 144px;
+}
+
+#advisors {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 300px;
+}
+
+.single-line-para {
+    margin-bottom: 16px;
 }
