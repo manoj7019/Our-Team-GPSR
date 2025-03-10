@@ -89,9 +89,9 @@ button.slide-nav-button:hover {
 
 .team-members {
     /* padding: 64px; */
-    width: 100%;
+    width: 1000px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -145,12 +145,12 @@ button.slide-nav-button:hover {
 
 #promoters {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 144px;
+    /* padding: 0 144px; */
 }
 
 #advisors {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 300px;
+    padding: 0 150px;
 }
 
 .single-line-para {
